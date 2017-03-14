@@ -1,0 +1,17 @@
+executable = pascal
+arguments = 10
+
+error = logs/pascal-$(cluster).error
+log = logs/pascal-$(cluster).log
+output = pascal-$(arguments)
+
++ProjectName="LIGO"
+use_x509userproxy = True
+
+request_cpus = 1
+request_memory = 50MB
+request_disk = 50MB
+
+queue 1
+
+
