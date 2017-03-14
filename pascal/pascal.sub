@@ -6,7 +6,7 @@ log = logs/pascal-$(cluster).log
 output = pascal-$(arguments)
 
 +ProjectName="LIGO"
-LigoSearchTag = "ligo.dev.o2.cbc.bbh.pycbcoffline"
++LigoSearchTag = "ligo.dev.o2.cbc.bbh.pycbcoffline"
 
 request_cpus = 1
 request_memory = 50MB
