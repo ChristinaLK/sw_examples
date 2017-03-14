@@ -11,6 +11,7 @@ output = img-$(img).out
 +ProjectName="LIGO"
 +LigoSearchTag = "ligo.dev.o2.cbc.bbh.pycbcoffline"
 use_x509userproxy = True
+Requirements = (IS_GLIDEIN =!= True)
 
 request_cpus = 1
 request_memory = 1GB
