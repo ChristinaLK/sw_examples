@@ -1,0 +1,20 @@
+img = grav_wave.jpeg
+executable = run_jp2a.sh
+arguments = $(img)
+
+transfer_input_files = jp2a_pkg.tgz, images/$(img)
+
+error = img-$(Process).error
+log = img-$(Process).log
+output = img-$(Process).out
+
++ProjectName="LIGO"
+use_x509userproxy = True
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 2GB
+
+queue 1
+
+
