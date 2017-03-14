@@ -2,7 +2,7 @@ img = grav_wave.jpeg
 executable = run_jp2a.sh
 arguments = $(img)
 
-transfer_input_files = jp2a_pkg.tgz, images/$(img)
+transfer_input_files = 
 
 error = logs/img-$(Cluster).$(Process).error
 log = logs/img-$(Cluster).log
