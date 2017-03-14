@@ -1,0 +1,23 @@
+# README
+
+More abbreviated install instructions from `ascii.history`.  
+
+   97  cd ascii/
+   99  tar xzf jp2a-1.0.6.tar.gz 
+  100  tar xzf jpegsrc.v9b.tar.gz 
+  102  mkdir jpeglib
+  107  cd jpeg-9b/
+  109  ./configure --prefix=/home/christina.koch/sw_examples/ascii/jpeglib
+  110  make; make install
+  118  export LD_LIBRARY_PATH=/home/christina.koch/sw_examples/ascii/jpeglib/lib:$LD_LIBRARY_PATH
+  111  cd ..
+  113  mkdir jp2a
+  114  cd jp2a-1.0.6/
+  120  ./configure --with-jpeg-prefix=$(pwd)/../jpeglib/ --prefix=$(pwd)/../jp2a
+  121  make; make install
+  122  cd ..
+  125  tar czf jp2a_pkg.tgz jp2a/ jpeglib/
+  126  nano run_jp2a.sh 
+  127  condor_submit jp2a.sub 
+  146  condor_q
+  149  less img-grav_wave.jpeg.out 

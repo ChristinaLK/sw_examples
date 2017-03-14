@@ -1,0 +1,11 @@
+   84  cd pascal/
+   85  ls
+   86  gcc pascal.c -o pascal_dynamic
+   87  file pascal_dynamic 
+   88  gcc -static pascal.c -o pascal_static
+   89  file pascal_static 
+   90  gcc -static pascal.c -o pascal
+   91  less pascal.sub 
+   92  condor_submit pascal.sub 
+   95  condor_q
+   96  less pascal-10 
