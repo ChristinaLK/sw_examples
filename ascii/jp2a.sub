@@ -4,11 +4,12 @@ arguments = $(img)
 
 transfer_input_files = jp2a_pkg.tgz, images/$(img)
 
-error = img-$(Process).error
-log = img-$(Process).log
-output = img-$(Process).out
+error = logs/img-$(Cluster).$(Process).error
+log = logs/img-$(Cluster).log
+output = img-$(img).out
 
 +ProjectName="LIGO"
++LigoSearchTag = "ligo.dev.o2.cbc.bbh.pycbcoffline"
 use_x509userproxy = True
 
 request_cpus = 1
